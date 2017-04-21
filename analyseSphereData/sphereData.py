@@ -4,8 +4,6 @@ import numpy as np
 import scipy.io
 from datetime import datetime, timedelta
 
-
-fileName = 'data_00.csv.gz'
 df = pd.read_csv(fileName)
 
 magnitude = df['wearable-mag-xl1']
@@ -13,7 +11,6 @@ timestamp = pd.to_datetime(df['datetime'])
 
 timestamp = timestamp[~np.isnan(magnitude)] # remove NaN corresponding to magnitude
 magnitude = magnitude[~np.isnan(magnitude)] # remove NaN
-
 
 acc_X = df['wearable-xl1-x']
 acc_Y = df['wearable-xl1-y']
