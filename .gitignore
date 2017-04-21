@@ -25,3 +25,4 @@ Thumbs.db
 ##################
 irc-sphere-sleep-56db93f64661/
 *.csv.gz
+*.ipynb_checkpoints
