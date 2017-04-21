@@ -1,8 +1,16 @@
-function featureSphereData (a,t)
-    for i=1:size(a,2) % 3 times for x,y,z coordinates (to be sure)
-        t(isnan(a(:,i))) = []; % removes values where NaN in data 
-        a(isnan(a(:,i)),:) = []; % removes colums with NaN values
-    end
+%% Load Sphere data
+clear all; clc
+addpath /Users/horken7/Documents/UoB/MDM3/circadian-rhytm/activityDetectionMATLABAndroid
 
+t_load = load('t.mat');
+t = t_load.struct';
+a_load = load('a.mat');
+a = a_load.struct';
 
-end
+save('data.mat', 'a', 't')
+
+windowLength = 5;
+uniformSampleRate = 60;
+
+extractTrainingFeature('data.mat',windowLength,uniformSampleRate)
+
