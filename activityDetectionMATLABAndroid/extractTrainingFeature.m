@@ -19,7 +19,7 @@ function featureTraining = extractTrainingFeature(fileName,...
 % windown and stores in the output variable featureTraining.
 %
 % Copyright 2014 The MathWorks, Inc.
-
+    format long
     rawData = load(fileName); % load recorded data
     
     %resampling
