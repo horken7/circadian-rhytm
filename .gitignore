@@ -32,3 +32,5 @@ a.mat
 data_00.csv.gz
 data.mat
 t.mat
+main.py
+*.csv
