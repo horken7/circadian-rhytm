@@ -10,7 +10,6 @@ magnitude = df['wearable-mag-xl1']
 timestamp = pd.to_datetime(df['datetime'])
 
 timestamp = timestamp[~np.isnan(magnitude)] # remove NaN corresponding to magnitude
-#timestamp = timestamp.tolist() # convert to list foramt
 magnitude = magnitude[~np.isnan(magnitude)] # remove NaN
 
 acc_X = df['wearable-xl1-x']
