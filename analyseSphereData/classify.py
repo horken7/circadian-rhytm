@@ -43,4 +43,6 @@ label = KMeans(n_clusters=2, random_state=10).fit_predict(features)
 
 plt.scatter(std.index, std.angle, c=label)
 plt.xlim(std.index[0], std.index[len(std.index)-1])
+plt.ylabel("std")
+plt.title("std resampled over 1sec intervals")
 plt.show()
