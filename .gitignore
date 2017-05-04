@@ -11,6 +11,7 @@
 *.tar
 *.zip
 *.csv
+*.pkl
 
 # OS generated files #
 ######################
@@ -34,3 +35,4 @@ data.mat
 t.mat
 main.py
 *.csv
+sleepFeatures.npy
