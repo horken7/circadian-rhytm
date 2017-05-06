@@ -12,6 +12,7 @@
 *.zip
 *.csv
 *.pkl
+*.md
 
 # OS generated files #
 ######################
