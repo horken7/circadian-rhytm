@@ -38,4 +38,4 @@ t.mat
 main.py
 *.csv
 sleepFeatures.npy
-activityDetectionMATLABAndroid
+activityDetectionMATLABAndroid/
